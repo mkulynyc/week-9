@@ -2,9 +2,9 @@
 
 When you're ready, make sure to submit your code for review on Canvas!
 
-Tests started at 2025-10-22 22:14:51.493153.
+Tests started at 2025-10-28 14:35:02.369456.
 
-## 1.1) test_estimate_argument -- failed
+## 1.1) test_estimate_argument -- passed
 **Description:**
 `estimate` argument can't be anything other than "mean" or "median". This tests what happens when we write `GroupEstimate(estimate=...)` for something other than "mean".
 
@@ -12,14 +12,7 @@ Tests started at 2025-10-22 22:14:51.493153.
 ```bash
 
 ```
-<details>
-<summary>TypeError</summary>
 
-```python
-GroupEstimate() got an unexpected keyword argument 'estimate'
-```
-
-</details>
 
 ## 3.1) test_predict_output_type -- failed
 **Description:**
@@ -30,10 +23,10 @@ If `gm = GroupEstimate ...`, test that the output of `gm.predict` is a numpy arr
 
 ```
 <details>
-<summary>TypeError</summary>
+<summary>NameError</summary>
 
 ```python
-GroupEstimate() got an unexpected keyword argument 'estimate'
+name 'X_' is not defined
 ```
 
 </details>
@@ -47,10 +40,10 @@ Using ["loc_country", "roast", 'origin_2'] columns in [coffee data](https://raw.
 
 ```
 <details>
-<summary>TypeError</summary>
+<summary>NameError</summary>
 
 ```python
-GroupEstimate() got an unexpected keyword argument 'estimate'
+name 'X_' is not defined
 ```
 
 </details>
@@ -64,11 +57,11 @@ Using ["loc_country", "roast"] in the [coffee data](https://raw.githubuserconten
 
 ```
 <details>
-<summary>TypeError</summary>
+<summary>NameError</summary>
 
 ```python
-GroupEstimate() got an unexpected keyword argument 'estimate'
+name 'X_' is not defined
 ```
 
 </details>
-<br>Tests stopped at 2025-10-22 22:14:51.930846.
+<br>Tests stopped at 2025-10-28 14:35:02.772578.
