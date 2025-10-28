@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 
 class GroupEstimate(object):
     def __init__(self, estimate):
@@ -23,8 +23,8 @@ class GroupEstimate(object):
         return None
 
     def predict(self, X):
-        # Merge X_ with the grouped data to get the estimates
-        merged = pd.merge(X_, self.grouped_data, how='left', on=list(X_.columns))
+        # Merge X with the grouped data to get the estimates
+        merged = pd.merge(X, self.grouped_data, how='left', on=list(X.columns))
 
         # Count how many rows have NaN in the target column
         missing_count = merged['target'].isna().sum()
@@ -32,7 +32,3 @@ class GroupEstimate(object):
             print(f"Warning: {missing_count} observations have missing groups and will return NaN.")
 
         return merged['target'].values
-    
-
-
-### RUN testcode IN THE TERMINAL TO CHECK
