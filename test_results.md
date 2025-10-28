@@ -2,7 +2,7 @@
 
 When you're ready, make sure to submit your code for review on Canvas!
 
-Tests started at 2025-10-28 14:35:02.369456.
+Tests started at 2025-10-28 14:42:44.815995.
 
 ## 1.1) test_estimate_argument -- passed
 **Description:**
@@ -23,10 +23,10 @@ If `gm = GroupEstimate ...`, test that the output of `gm.predict` is a numpy arr
 
 ```
 <details>
-<summary>NameError</summary>
+<summary>AttributeError</summary>
 
 ```python
-name 'X_' is not defined
+'list' object has no attribute 'columns'
 ```
 
 </details>
@@ -40,10 +40,10 @@ Using ["loc_country", "roast", 'origin_2'] columns in [coffee data](https://raw.
 
 ```
 <details>
-<summary>NameError</summary>
+<summary>AttributeError</summary>
 
 ```python
-name 'X_' is not defined
+'list' object has no attribute 'columns'
 ```
 
 </details>
@@ -57,11 +57,11 @@ Using ["loc_country", "roast"] in the [coffee data](https://raw.githubuserconten
 
 ```
 <details>
-<summary>NameError</summary>
+<summary>AttributeError</summary>
 
 ```python
-name 'X_' is not defined
+'list' object has no attribute 'columns'
 ```
 
 </details>
-<br>Tests stopped at 2025-10-28 14:35:02.772578.
+<br>Tests stopped at 2025-10-28 14:42:45.162351.
